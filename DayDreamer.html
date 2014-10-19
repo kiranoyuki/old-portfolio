@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>DayDreamer</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Portfolio Webpage">
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet" >
+		<link href="bootstrap/fonts/bootstrap-glyphicons.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900' rel='stylesheet' type='text/css'>
+		
+		<!-- Custom CSS -->
+		<link href="custome/css/style.css" rel="stylesheet">
+		<link href="custome/css/icon.css" rel="stylesheet">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="custome/js/modernizr-2.6.2.min.js"></script>
+	</head>
+
+	<body>
+		<!-- NAVIGATION -->
+		<header>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			
+			<div class="container">
+
+				<!-- toggle to group for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" id="nav-toggle" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<h3><a href="#" class="navbar-brand hidden-lg hidden-md" data-section="About">DayDreamer</a></h3>
+				</div><!-- end toggle navbar-header -->
+
+				<!-- Normal navigation -->
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="nav navbar-nav">
+				
+						<li><a href="#" class="scroll-link active" data-id="about">About Me</a></li>
+						<li><a href="#" class="scroll-link" data-id="mySkills">What I can help</a></li>
+						<li class="hidden-sm hidden-xs"><h3><a href="#" class="scroll-link navbar-brand" data-id="about">DayDreamer</a></h3></li>
+						<li><a href="#" class="scroll-link" data-id="myWorks">My Work</a></li>
+						<li><a href="#" class="scroll-link" data-id="contact">Call me Maybe?</a></li>
+
+				</div><!-- end collapse navbar-->
+			</div><!-- container fluid -->
+		
+
+		</nav><!-- end top fixed navigation -->
+		</header><!-- end header -->
+		<!-- SIDE BAR / RESUME -->
+
+		<section id="main">
+			
+			
+			<!-- CAROUSEL / About ME -->
+			<section id="about" >
+				<section id="introduction">
+				<h2>~~ WELCOME TO MY WORLD! ~~</h2>				
+				</section><!-- introduction -->
+				
+				<div id="carousel-aboutMe"  class="carousel slide " data-ride="carousel">
+					<!-- Indicators -->
+					  <!--ol class="carousel-indicators">
+					    <li data-target="#carousel-aboutMe" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-aboutMe" data-slide-to="1"></li>
+					    <li data-target="#carousel-aboutMe" data-slide-to="2"></li>
+					  </ol-->
+					<!-- wrap for slides -->
+
+					<div class="carousel-inner">
+
+
+						<div class="item active" id="slide1">
+      						
+      						<div class="carousel-caption">
+      							<h3>I <strong>ANALYZE</strong> and <strong>SIMPLIFY</strong> your thought</h3>
+					        </div><!-- end caption -->
+					      	<object type="image/svg+xml" data="custome/svg/graph.svg" class="graph">
+					      	  Graph Data<!-- fallback image in CSS -->
+					      	</object>
+					    </div><!-- end item active -->
+
+					    <div class="item" id="slide2">
+      						
+      						<div class="carousel-caption">
+      							<h3>with <strong>BOLD</strong> color</h3>					       
+					      	</div><!-- end caption -->
+					      	<div class="color"></div>
+					    </div><!-- end item1-->
+
+					    <div class="item" id="slide3">
+      						
+      						<div class="carousel-caption">
+      							<h3>with <strong>FUN</strong> image</h3>
+					       
+					      	</div><!-- end caption -->
+					    </div><!-- end item3-->
+
+					    <div class="item" id="slide4">
+      						
+      						<div class="carousel-caption">
+      							<h3>and <strong>BRING</strong> out your <strong>STORY</strong></h3>
+					        </div><!-- end caption -->
+					        <object type="image/svg+xml" data="custome/svg/story.svg" class="StoSVG">
+					      	  Story of your website<!-- fallback image in CSS -->
+					      	</object>
+					    </div><!-- end item4-->
+					    
+					</div><!-- end carousel inner-->
+
+					 <!-- Controls -->
+					<!--div class="container"-->
+						<a class="left carousel-control" href="#carousel-aboutMe" role="button" data-slide="prev">
+					    	<span class="glyphicon glyphicon-chevron-left"></span>
+					  	</a>
+					  	<a class="right carousel-control" href="##carousel-aboutMe" role="button" data-slide="next">
+					    	<span class="glyphicon glyphicon-chevron-right"></span>
+					  	</a>
+					<!--/div-->	
+				</div><!-- end carousel-aboutMe -->	
+			</section><!-- end carousel section -->
+
+		<!-- BODY / MY SKIlls -->
+			<section id="mySkills">
+
+				<!-- Content stage -->
+				<section id="intro">
+					<div class="container">
+						<h2>WHAT MY IMAGINATION CAN DO</h2>
+						<div class="row" id="content">
+							<div class="col-md-6 Col1" >
+								<h3>Great Content</h3>
+								<p>I focus on making every content simple and comprehensive as well as <strong>EMPHASIZE</strong> the main points.</p>
+							</div><!-- end col-md-6 -->
+							<div class="col-md-6 Col2 " >
+								<div class="ConPic"></div>
+							</div><!-- end col-md-6 -->
+						</div><!-- end row -->
+					</div><!-- end container -->
+				</section><!-- end intro -->
+
+				<!-- graphics -->
+				<section id="graphics" >
+					<div class="container">
+						<div class="row" id="graphicStage">
+							<div class="col-md-6 Col1">
+								<div class="GraPic"></div>
+								
+							</div><!-- end col-md-6 -->
+							<div class="col-md-6 Col2">
+								<h3>Stunning Graphics</h3>
+								<p>Too many words? Let the image speaks for itself</p>
+								<p>I play with Flat Design using <strong>FUN</strong> icons, <strong>BOLD</strong> color and <strong>COOL</strong> animations.</p>
+							</div><!-- end col-md-6 -->
+						</div><!-- end row -->
+					</div><!-- end container -->
+				</section><!-- end intro -->
+				
+				<!-- navigation stage -->
+
+				<section id="navigation">
+					<div class="container">
+						<div class="row" id="navigationStage">
+							<div class="col-md-6 Col1">
+								<h3>Easy Navigation</h3>
+								<p>I make the website friendly and easily to access.</p>
+								<p>Just let the navigation guide you through.</p>
+							</div><!-- end col-md-6 -->
+							<div class="col-md-6 Col2">
+								<div class="NavPic"></div>	
+							</div><!-- end col-md-6 -->
+						</div><!-- end row -->
+					</div><!-- end container -->
+				</section><!-- end intro -->
+
+				<!--publishing stage -->
+
+				<section id="responsive">
+					<div class="container">
+						<div class="row" id="responsiveStage">
+							<div class=" Col1 col-md-6">
+								<div class="ResPic"></div>							
+							</div><!-- end col-md-6 -->
+							<div class=" Col2 col-md-6">
+								<h3>Responsive Design</h3>
+								<p>Too difficult to see the website on a phone?</p>
+								<p>I make the website adapt to any screen size. Now people can visit the website any where with any device and still enjoy it.</p>
+							</div><!-- end col-md-6 -->
+						</div><!-- end row -->
+					</div><!-- end container -->
+				</section><!-- end intro -->
+			</section><!-- end mySkills -->
+		
+		<!-- GALLERY WOKRS -->
+
+			<section id="myWorks">
+				<div class="container">
+					<h4>MY CLIENTS</h4>
+					<p>Want to Find more? Oops, it's coming soon!</p>
+				</div><!-- end container -->
+				
+			</section><!-- end myWorks -->
+
+			<!-- FOOTER / CONTACT -->
+		
+			<section id="contact" >
+				<div class="container">
+					
+					<h3>CONTACT</h3>
+					<p>Let's Cooperate. </p>
+
+					<!-- contact form -->
+					<form class="form-horizontal" role="form">
+					  <div class="form-group">
+					    <label for="inputName" class="col-sm-2 control-label">Name*</label>
+					    <div class="col-sm-10">
+					      <input type="name" class="form-control" id="inputName" placeholder="Your Name">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputEmail" class="col-sm-2 control-label">Email*</label>
+					    <div class="col-sm-10">
+					      <input type="email" class="form-control" id="inputEmail" placeholder="Your email">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputMessage" class="col-sm-2 control-label">Message*</label>
+					    <div class="col-sm-10">
+					      	<textarea class="form-control" rows="3" placeholder="Let me know what I can help you .."></textarea>
+					    </div>
+					  </div>
+					  
+					  <div class="form-group">
+					    <div class="col-sm-offset-2 col-sm-10">
+					      <button type="submit" class="btn btn-default">Send!</button>
+					    </div>
+					  </div>
+					</form>
+				</div><!-- end of container -->
+			</section><!-- end of contact -->
+
+			<footer>
+				<div class="container">
+					<h4>My Address</h4>
+					<p>4052 Baring St. UnitA <br> Philadelphia, PA 19104 </br> </p>
+					<a href="mailto:aql@drexel.edu?" target="_top">aql25@drexel.edu</a>
+					<h4>Give me a call!</h4>
+					<p>+1 215 834 8222</p>
+				</div>
+			</footer><!-- end of footer -->
+		</section><!-- end of main -->
+		
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="custome/js/script.js"></script>
+	<script src="custome/js/svg.js"></script>
+
+	</body>
+</html>
+

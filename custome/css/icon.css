@@ -1,0 +1,58 @@
+
+
+.graph {
+	background-image: no-repeat;
+	height: 300px;
+	transform: translate(10px,50px);
+}
+
+.color {
+	background: url("../svg/colorwheel.png") no-repeat center; 
+	transform: translate(0px, 50px);
+	height: 300px;	
+
+	
+}
+
+.StoSVG {
+	background-image:no-repeat;
+	transform: translate(0px, 50px);
+	height: 300px;	
+
+}
+
+.ConPic {
+	background :url("../svg/content.png") no-repeat;
+	width: 400px;
+	height: 400px;
+	background-size: 400px 400px;
+	
+}
+.GraPic {
+	background: url("../svg/graphic.png") no-repeat;
+	width: 400px;
+	height: 400px;
+	background-size: 400px auto;
+	float: right;
+	transform: translate(-20px, -50px);
+	
+}
+.NavPic {
+	background: url("../svg/navigation.png") no-repeat;
+	width: 400px;
+	height: 400px;
+	background-size: 300px auto;
+	transform: translate(40px, -10px);
+	
+}
+
+.ResPic {
+	background: url("../svg/responsive.png") no-repeat;
+	width: 400px;
+	height: 400px;
+	background-size: 400px auto;
+	float: right;
+	transform: translate(-20px, -50px);
+	
+}
+

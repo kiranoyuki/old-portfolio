@@ -1,0 +1,280 @@
+/*
+	@font-face {
+	    font-family: 'SourceCode-SemiBold'; 
+	    src: url('../font/source-code-pro/SourceCodePro-Semibold.otf') format('truetype'); 
+	}
+	@font-face {
+	    font-family: 'SourceCode-Regular'; 
+	    src: url('../font/source-code-pro/SourceCodePro-Regular.otf') format('truetype'); 
+	}
+	@font-face {
+	    font-family: 'SourceCode-Black'; 
+	    src: url('../font/source-code-pro/SourceCodePro-Black.otf') format('truetype'); 
+	}
+*/
+/*----------------------------- 
+		Global Style
+-------------------------------*/
+body p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #757575;
+	margin: 0;
+	line-height: 250%;
+
+
+}
+body h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	color: #52694E;
+	letter-spacing: 0.1em;
+
+}
+
+body h3, h4 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 900;
+	color: #7C9E77;
+	
+
+}
+
+#mySkills .container {
+	height: 500px;
+
+}
+
+#mySkills .container .row{
+	padding-top: 10%;
+}
+
+#mySkills h3 {
+	font-size: 30px;
+}
+
+.Col1 {
+	text-align: right;
+}
+
+.Col2 {
+	text-align: left;
+}
+/*----------------------------- 
+		NAVIGATION
+-------------------------------*/
+
+.navbar {
+	
+	background:none repeat scroll 0 0 rgba(255,255,255,0.9); 
+	border: none;
+
+}
+
+.navbar .nav > li > a {
+	
+	font-weight: bold;
+	font-size:14px; text-transform:uppercase; 
+	letter-spacing:0.14em; 
+	text-align:center;
+	color: #000;
+	border:3px solid transparent; 
+	margin: 20px 0.5em;
+	
+}
+.navbar-toggle { margin: 30px 0;}
+.navbar .nav > li > a:hover {
+	border-color: #ddd;
+}
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus  {
+  border:3px solid transparent;
+  border-color: #000;
+  background-color: transparent;
+
+}
+/*------------- MAKE THE LOGO STAY INLINE------------------- */
+
+@media (min-width:768px) { 
+	header {
+		height: 80px;
+	}
+ .navbar > .container {
+    text-align: center;
+ }
+ .navbar-header {
+    float: center;
+    display: inline-block;
+
+ }
+ .navbar-brand {
+    float: none;
+    display: inline-block;
+
+ }
+ .navbar .navbar-nav {
+    float: none;
+    display: inline-block;
+    clear: none;
+    margin-top: -20px;
+
+ }
+ .navbar .navbar-nav > li {
+    float: none;
+    display: inline-block;
+ }
+}
+@media (max-width: 979px)  {
+	header {
+ 		height: 140px;
+ 	}
+}
+@media (max-width: 768px){
+ 	header {
+ 		height: 70px;
+ 	}
+ }
+/* ------------- END INLINE LOGO ------------- */
+
+/*---------------------------------
+			Introduction
+--------------------------------- */
+
+#intro .container .row{
+	padding: 0 0;
+}
+
+#introduction {
+	background-color : #E5FCC2;
+	height: 80px;
+	
+}
+
+
+#introduction h2 {
+	text-align: center;
+	padding-top: 40px;
+}
+/*---------------------------------
+			Carousel
+--------------------------------- */
+/*.carousel {
+	margin-top: 200px;
+}*/
+
+#carousel-aboutMe .item { height: 430px; }
+.carousel-inner {
+	text-align: center;
+}
+
+#slide1, #slide2, #slide3, #slide4 {
+	background-color: #E5FCC2 ;
+}
+/*.carousel-indicators li {
+	background-color: #424242;
+}
+.carousel-indicators .active {
+	background-color: #000;
+}*/
+.carousel-caption {
+	text-shadow: none;
+	letter-spacing: 0.08em;
+	padding-top: 0;
+	top: 0;
+	bottom: auto;
+}
+.carousel-caption strong {
+	color: #7CB274;
+}
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .icon-prev {
+    margin-left: 2em;
+  }
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next {
+    margin-right: 2em;
+  }
+/*-----get rid of carousel gradient ---*/
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    @include reset-filter();
+}
+
+/*---------------------------------
+			BODY- content
+--------------------------------- */
+#intro {
+	background-color: transparent;
+	height: 500px;
+
+}
+#intro h2 {
+	text-align: center;
+	padding-top: 30px;
+}
+
+#content .Col1 {
+	padding-top: 80px;
+} 
+/*---------------------------------
+			BODY - graphics
+--------------------------------- */
+#graphics {
+	background-color: #E5FCC2;
+}
+
+
+/*---------------------------------
+			BODY - navigation
+--------------------------------- */
+#navigation {
+	background-color: transparent;
+}
+/*---------------------------------
+			BODY-responsive
+--------------------------------- */
+#responsive {
+	background-color: #E5FCC2;
+}
+
+/*---------------------------------
+			GALLERY WORKS
+--------------------------------- */
+#myWorks {
+	
+	height: 400px;
+	padding: 100px auto;
+	text-align: center;
+}
+#myWorks h4 {
+	padding-top: 50px;
+}
+
+/*---------------------------------
+			CONTACT - FOOTER
+--------------------------------- */
+
+#contact {
+	background-color: #E5FCC2;
+	height: 500px;
+	text-align: center;
+	padding-top: 50px;
+
+
+}
+
+
+footer {
+	background-color: #594F4F;
+	text-align: center;
+}
+ 
+ 
+ 
+
+
+
+
