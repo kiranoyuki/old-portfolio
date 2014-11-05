@@ -43,3 +43,20 @@ if (typeof console === "undefined") {
         log: function() { }
     };
 }
+
+/*  ------------- animation ------------------------*/
+
+
+jQuery(document).ready(function() {
+    jQuery('.Col1').addClass("hidden-scroll").viewportChecker({
+        classToAdd: 'visible-scroll animated fadeInLeft',
+        offset: 200
+       });
+});
+jQuery(document).ready(function() {
+    jQuery('.Col2').addClass("hidden-scroll").viewportChecker({
+        classToAdd: 'visible-scroll animated fadeInRight',
+        offset: 200
+       });
+});
+
