@@ -20,32 +20,29 @@
 	height: 300px;	
 }
 .ConPic {
-	background :url("../svg/content.png") no-repeat center;
+	background :url("../svg/content.png") no-repeat center center;
 	height: 400px;
-	width: 400px;
 	background-size: 400px 400px;
 	position: relative;
 }
 .GraPic {
-	background: url("../svg/graphic.png") no-repeat right center;
+	background: url("../svg/graphic.png") no-repeat center center;
 	height: 400px;
 	background-size: 350px 350px;
 	position: relative;
-	right: 30px;
 }
 .NavPic {
-	background: url("../svg/navigation.png") no-repeat center ;
+	background: url("../svg/navigation.png") no-repeat center center;
 	height: 400px;
-	width: 400px;
 	background-size: 300px 300px;
+	position: relative;
 	
 }
 .ResPic {
-	background: url("../svg/responsive.png") no-repeat right center;
+	background: url("../svg/responsive.png") no-repeat center center;
 	height: 400px;
 	background-size: 400px 400px;
 	position: relative;	
-	right: 30px;
 }
 /*.ResPic, .NavPic, .GraPic, .ConPic {
 	-ms-transform: translate(30px, 0px); /* IE 9 */

@@ -1,11 +1,16 @@
 @font-face {
-    font-family: 'KGLastTime'; 
+    font-family: 'WhipsBold'; 
+    src: url('../font/Whipsmart Bold.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'KG'; 
     src: url('../font/KG.ttf') format('truetype'); 
 }
-/*@font-face {
-    font-family: 'SourceCode-Regular'; 
-    src: url('../font/source-code-pro/SourceCodePro-Regular.otf') format('truetype'); 
+@font-face {
+    font-family: 'KGB'; 
+    src: url('../font/KGBubble.ttf') format('truetype'); 
 }
+/*
 @font-face {
 	    font-family: 'SourceCode-Black'; 
 	    src: url('../font/source-code-pro/SourceCodePro-Black.otf') format('truetype'); 
@@ -13,51 +18,35 @@
 /*----------------------------- 
 		Global Style
 -------------------------------*/
-body p {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	font-size: 16px;
+#main p {
+	font-family: 'WhipsBold', sans-serif;
+	font-size: 18px;
 	letter-spacing: 0.05em;
-	color: #515151;
+	color: #6C7A89;
 	margin: 0;
 	line-height: 175%;
-
-
 }
 body h2 {
-	font-family: 'KGLastTime', sans-serif;
+	font-family: 'KG', sans-serif;
 	font-size: 32px;
 	letter-spacing: 0.1em;	
 	color:#7CB274;
 }
-
-body h3, h4 {
-	font-family: 'KGLastTime', sans-serif;
+body h3 {
+	font-family: 'KG', sans-serif;
+	letter-spacing: 0.05em;
+	color:#7CB274;
+	font-weight: bold;
+}
+#mySkills h3 {
+	font-family: 'KGB', sans-serif;
 	letter-spacing: 0.05em;
 	color:#7CB274;
 }
 
-#mySkills .container {
-	height: 500px;
-}
 
-#mySkills h3 {
-	font-size: 26px;
-}
 
-.Col1 {
-	text-align: right;
-}
 
-.Col2 {
-	text-align: left;
-}
-#mySkills .text {
-	margin-top: 10%;
-}
-#mySkills .pic {
-	margin-top: 30px;
-}
 /*----------------------------- 
 		NAVIGATION
 -------------------------------*/
@@ -75,6 +64,9 @@ body h3, h4 {
 	border:3px solid transparent; 
 	margin: 20px 0.5em;
 }
+.navbar h3 {
+	font-family: 'KG', sans-serif;
+}
 .navbar-toggle { margin: 30px 0;}
 .navbar .nav > li > a:hover {
 	border-color: #ddd;
@@ -89,35 +81,35 @@ body h3, h4 {
 }
 /*------------- MAKE THE LOGO STAY INLINE------------------- */
 
-@media (min-width:768px) { 
+@media (min-width:768px){ 
 	header {
 		height: 80px;
 	}
- .navbar > .container {
-    text-align: center;
- }
-.navbar-header {
-    float: center;
-    display: inline-block;
- }
- .navbar-brand {
-    float: none;
-    display: inline-block;
+	 .navbar > .container {
+	    text-align: center;
+	 }
+	.navbar-header {
+	    float: center;
+	    display: inline-block;
+	 }
+	 .navbar-brand {
+	    float: none;
+	    display: inline-block;
 
- }
- .navbar .navbar-nav {
-    float: none;
-    display: inline-block;
-    clear: none;
-    margin-top: -20px;
+	 }
+	 .navbar .navbar-nav {
+	    float: none;
+	    display: inline-block;
+	    clear: none;
+	    margin-top: -20px;
 
- }
- .navbar .navbar-nav > li {
-    float: none;
-    display: inline-block;
- }
+	 }
+	 .navbar .navbar-nav > li {
+	    float: none;
+	    display: inline-block;
+	 }
 }
-@media (max-width: 979px)  {
+@media (max-width: 979px){
 	header {
  		height: 140px;
  	}
@@ -128,6 +120,7 @@ body h3, h4 {
  	}
  }
 /* ------------- END INLINE LOGO ------------- */
+
 
 /*---------------------------------
 			Introduction
@@ -153,7 +146,7 @@ body h3, h4 {
 #introduction h2 {
 	color: #FFFFFF;
 	text-align: center;
-	padding-top: 40px;
+	padding-top: 20px;
 }
 /*---------------------------------
 			Carousel
@@ -187,9 +180,11 @@ body h3, h4 {
 
 }
 .carousel-caption h4 {
+	font-family: 'WhipsBold' , sans-serif;
 	color: #7CB274;
 	letter-spacing: 0.15em;
-	font-size: 18px;
+	font-size: 24px;
+	font-weight: bolder;
 }
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .icon-prev {
@@ -208,17 +203,17 @@ body h3, h4 {
 /*---------------------------------
 			BODY- content
 --------------------------------- */
+#mySkills h3 {
+		font-size: 26px;
+	}
 #intro {
 	background-color: transparent;
-	height: 500px;
-
+/*	height: 500px;*/
 }
 #intro h2 {
 	text-align: center;
 	padding-top: 30px;
 }
-
-
 /*---------------------------------
 			BODY - graphics
 --------------------------------- */
@@ -254,6 +249,36 @@ body h3, h4 {
 	padding-top: 50px;
 }
 
+@media (min-width: 979px){
+	.Col1 {
+		text-align: right;
+	}
+	.Col2 {
+		text-align: left;
+	}
+	#mySkills .text {
+		margin-top: 10%;
+	}
+	#mySkills .pic {
+		margin-top: 30px;
+	}
+}
+/*--------------Tablet ------------------*/
+@media (max-width: 979px){
+	.Col1 {
+		text-align: center;
+	}
+	.Col2 {
+		text-align: center;
+	}
+	.text {
+		margin: 5% 10px;
+	}
+	.pic {
+		margin: 5% 0px ;
+	}
+}
+
 /*---------------------------------
 			CONTACT - FOOTER
 --------------------------------- */
@@ -265,7 +290,7 @@ body h3, h4 {
 	text-align: center;
 	padding-top: 50px;
 }
-.btn-default {
+.btn-submit {
 	background: #FFFFFF;
 	width: 100px;
 	height: 100px;
@@ -283,9 +308,12 @@ body h3, h4 {
          -o-transition-timing-function: ease-in-out;
             transition-timing-function: ease-in-out;
 }
-.btn-default:hover{
+.btn-submit:hover{
 	background-color: #1BBC9B;
 	border: 3px solid #FFFFFF;	
+}
+.form-group label {
+	color: #E5FCC2;
 }
 footer {
 	background-color: #594F4F;
@@ -305,6 +333,7 @@ footer p {
 	vertical-align: middle;
 };
  
+
  
  
 
